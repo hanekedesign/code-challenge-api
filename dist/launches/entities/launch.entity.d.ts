@@ -1,0 +1,33 @@
+import { LaunchCore } from './launch-core.entity';
+import { LaunchFailure } from './launch-failure.entity';
+import { LaunchFairings } from './launch-fairing.entity';
+import { LaunchLinks } from './launch-links.entity';
+export declare class Launch {
+    id: string;
+    name?: string;
+    details?: string;
+    flightNumber?: number;
+    upcoming?: boolean;
+    success?: boolean;
+    tbd?: boolean;
+    net?: boolean;
+    autoUpdate?: boolean;
+    ships?: string[];
+    capsules?: string[];
+    payloads?: string[];
+    cores?: LaunchCore[];
+    crew?: string[];
+    failures?: LaunchFailure[];
+    staticFireDateUtc?: string;
+    staticFireDateUnix?: number;
+    dateUtc?: string;
+    dateUnix?: number;
+    dateLocal?: string;
+    datePrecision?: string;
+    links?: LaunchLinks;
+    fairings?: LaunchFairings;
+    window?: number;
+    rocket?: string;
+    launchpad?: string;
+    launchLibraryId?: string;
+}

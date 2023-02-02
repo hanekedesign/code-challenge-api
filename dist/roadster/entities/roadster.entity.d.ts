@@ -1,0 +1,29 @@
+export declare class Roadster {
+    id: string;
+    name?: string;
+    details?: string;
+    video?: string;
+    wikipedia?: string;
+    orbitType?: string;
+    marsDistanceMi?: number;
+    marsDistanceKm?: number;
+    earthDistanceMi?: number;
+    earthDistanceKm?: number;
+    speedMph?: number;
+    speedKph?: number;
+    periodDays?: number;
+    periapsisArg?: number;
+    longitude?: number;
+    inclination?: number;
+    eccentricity?: number;
+    semiMajorAxisAu?: number;
+    periapsisAu?: number;
+    apoapsisAu?: number;
+    epochJd?: number;
+    noradId?: number;
+    launchMassLbs?: number;
+    launchMassKg?: number;
+    launchDateUtc?: string;
+    launchDateUnix?: number;
+    flickrImages?: string[];
+}
