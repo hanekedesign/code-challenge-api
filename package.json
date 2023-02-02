@@ -6,12 +6,16 @@
     "prebuild": "rimraf dist",
     "build": "nest build",
     "start": "nest start --watch",
+    "start:prod": "node dist/main",
     "serve": "node dist/main",
     "lint": "eslint --ignore-path .gitignore --ext .ts src",
     "check:types": "tsc --noEmit",
     "check:format": "prettier --ignore-path .gitignore --check \"src/**/*.ts\"",
     "static:analysis": "run-p lint check:types check:format",
     "test:unit": "jest --coverage"
+  },
+  "engines": {
+    "node": "12.22.4"
   },
   "dependencies": {
     "@nestjs/axios": "^0.0.1",
