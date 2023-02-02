@@ -29,6 +29,8 @@ import { StarlinksModule } from './starlinks/starlinks.module';
       useFactory: async (configService: ConfigService) => ({
         debug: configService.get(NODE_ENV) === 'development',
         autoSchemaFile: true,
+        playground: true,
+        introspection: true,
       }),
       inject: [ConfigService],
     }),
